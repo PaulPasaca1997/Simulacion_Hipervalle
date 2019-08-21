@@ -15,7 +15,7 @@
 <vType id="moto" sigma="0.5" vClass="motorcycle" guiShape="motorcycle"/>
 
 
-
+----------------Rutas Buses ------------
 
 <route id="route1" edges="orillas1 orillas2"/>
 
@@ -28,28 +28,101 @@
 <route id="route5" edges=" guaya1 guaya2 guaya3 nueval2"/>
 
 
-
-
-
-
-
-
 <flow id="pitas-rosal" begin="0" end= "5400" period="100" route="route1" type="onibus"  />
 <flow id="pitas-rosal1" begin="0" end= "5400" period="100" route="route2" type="onibus"/>
 
-<flow id="borja-isidro" begin="0" end= "5400" period="150" route="route3" type="carro"/>
+<flow id="borja-isidro" begin="0" end= "5400" period="150" route="route3" type="onibus"/>
 
-<flow id="paraiso-sol" begin="0" end= "5400" period="160" route="route5" type="camião"/>
+<flow id="paraiso-sol" begin="0" end= "5400" period="160" route="route5" type="onibus"/>
 
-<flow id="sauces-julio" begin="0" end= "5400" period="170" route="route4" type="trailer"/>
+<flow id="sauces-julio" begin="0" end= "5400" period="170" route="route4" type="onibus"/>
 
-<flow id="colinas-lojanas1" begin="240" end= "5400" period="180" route="route2" type="bici"/>
+<flow id="colinas-lojanas1" begin="240" end= "5400" period="180" route="route2" type="onibus"/>
 
-<flow id="sauces-julio1" begin="300" end= "5400" period="170" route="route2" type="trailer"/>
+<flow id="sauces-julio1" begin="300" end= "5400" period="170" route="route2" type="onibus"/>
 
-<flow id="colinas-lojanas" begin="300" end= "5400" period="180" route="route1" type="bici"/>
+<flow id="colinas-lojanas" begin="300" end= "5400" period="180" route="route1" type="onibus"/>
 
-<flow id="motupe-punzara" begin="300" end= "5400" period="200" route="route3" type="moto"/>
+<flow id="motupe-punzara" begin="300" end= "5400" period="200" route="route3" type="onibus"/>
+
+
+
+
+------------------------------------RUTAS AUTOS-----------------------------------
+
+							   -----Entrada Iglesia-Zona-------- 
+<route id="route6" edges=" guaya1 guaya2 guaya3 guaya4"/>
+<route id="route7" edges=" guaya1 cuenca2"/>
+<route id="route8" edges=" guaya1 cuenca4 cuenca6"/>
+<route id="route9" edges=" guaya1 guaya2 orillas2"/>
+<route id="route10" edges=" guaya1 guaya2 orillas3 orillas4"/>
+<route id="route11" edges=" guaya1 guaya2 guaya3 nueval2"/>
+
+
+
+
+
+							   -----Entrada Zona-Iglesia-------- 
+
+<route id="route12" edges=" guaya5 guaya6 guaya7 guaya8"/>
+<route id="route13" edges=" guaya5 nueval2"/>
+<route id="route14" edges=" guaya5 guaya6 orillas3 orillas4"/>
+<route id="route15" edges=" guaya5 guaya6 orillas2"/>
+<route id="route16" edges=" guaya5 guaya6 guaya7 cuenca2"/>
+<route id="route17" edges=" guaya5 guaya6 guaya7 cuenca4 cuenca6"/>
+
+
+
+<flow id="auto1" begin="400" end= "5400" period="100" route="route6" type="carro"/>
+<flow id="auto2" begin="400" end= "5400" period="100" route="route12" type="carro"/>
+
+<flow id="auto3" begin="500" end= "5400" period="100" route="route7" type="carro"/>
+<flow id="auto4" begin="500" end= "5400" period="100" route="route13" type="carro"/>
+
+
+<flow id="auto5" begin="600" end= "5400" period="100" route="route8" type="carro"/>
+<flow id="auto6" begin="600" end= "5400" period="100" route="route14" type="carro"/>
+
+
+<flow id="auto7" begin="700" end= "5400" period="100" route="route9" type="carro"/>
+<flow id="auto8" begin="700" end= "5400" period="100" route="route15" type="carro"/>
+
+
+<flow id="auto9" begin="800" end= "5400" period="100" route="route10" type="carro"/>
+<flow id="auto10" begin="800" end= "5400" period="100" route="route16" type="carro"/>
+
+<flow id="auto11" begin="900" end= "5400" period="100" route="route11" type="carro"/>
+<flow id="auto12" begin="900" end= "5400" period="100" route="route17" type="carro"/>
+
+
+							   -----Entrada Nueva Loja-------- 
+								
+<route id="route18" edges=" nueval1 guaya6 guaya7 guaya8"/>
+<route id="route19" edges=" nueval1 guaya4"/>
+<route id="route20" edges=" nueval1 nueval2"/>
+<route id="route21" edges=" nueval1 guaya6 orillas2"/>
+<route id="route22" edges=" nueval1 guaya6 orillas3 orillas4"/>
+<route id="route23" edges=" nueval1 guaya6 guaya7 cuenca2"/>
+<route id="route24" edges=" nueval1 guaya6 guaya7 cuenca4 cuenca6"/>
+
+							   -----Entrada Orillas Zamora-------- 
+							   
+<route id="route25" edges=" orillas5 orillas1 orillas2"/>
+<route id="route26" edges=" orillas5 orillas1 guaya7 guaya8"/>
+<route id="route27" edges=" orillas5 orillas1 guaya7 cuenca2"/>
+<route id="route28" edges=" orillas5 orillas1 guaya7 cuenca4 cuenca6"/>
+<route id="route29" edges=" orillas5 orillas1 guaya3 nueval2"/>
+<route id="route30" edges=" orillas5 orillas1 guaya3 guaya4"/>
+
+
+
+
+
+----------- RUTAS BICICLETAS-------------------------
+
+
+
+
 
 
 
