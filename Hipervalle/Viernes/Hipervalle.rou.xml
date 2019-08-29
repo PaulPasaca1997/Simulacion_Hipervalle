@@ -1,0 +1,299 @@
+<routes>
+
+<vType id="carro"  sigma="0.5" vClass="passenger"   guiShape="passenger"   color="192, 192, 192" />
+<vType id="carro1" sigma="0.5" vClass="passenger"   guiShape="passenger"   color="255, 255, 255" />
+<vType id="carro2" sigma="0.5" vClass="passenger"   guiShape="passenger"   color="0, 0, 139" />
+<vType id="carro3" sigma="0.5" vClass="passenger"   guiShape="passenger"   color="128, 0, 0" />
+<vType id="taxi"   sigma="0.5" vClass="passenger"   guiShape="passenger"   color="255, 255, 0"/>
+<vType id="bus"    sigma="0.5" vClass="bus"         guiShape="bus"         color="255, 0, 0"/>
+<vType id="bici"   sigma="0.5" vClass="bicycle"   	guiShape="bicycle"     color="173, 255, 47" />
+<vType id="moto"   sigma="0.5" vClass="motorcycle"  guiShape="motorcycle"  color="30, 144, 255"/>
+<vType id="camion" sigma="0.5" vClass="delivery"    guiShape="delivery"    color="255, 255, 255"/>
+
+
+
+----------------Rutas Buses ------------
+
+<route id="route1" edges="orillas1 orillas2"/>
+
+<route id="route2" edges="nueval1 nueval2"/>
+
+<route id="route3" edges="guaya9 guaya5 nueval2"/>
+
+<route id="route4" edges="orillas1 guaya3 guaya4 guaya10"/>
+
+<route id="route5" edges=" guaya1 guaya2 guaya3 nueval2"/>
+
+
+<flow id="pitas-rosal" begin="0" end= "5400" period="420" route="route1" type="bus"  />
+
+<flow id="pitas-rosal1" begin="0" end= "5400" period="420" route="route2" type="bus"/>
+
+<flow id="borja-isidro" begin="0" end= "5400" period="420" route="route3" type="bus"/>
+
+<flow id="paraiso-sol" begin="0" end= "5400" period="420" route="route5" type="bus"/>
+
+<flow id="sauces-julio" begin="0" end= "5400" period="420" route="route4" type="bus"/>
+
+<flow id="colinas-lojanas1" begin="0" end= "5400" period="420" route="route2" type="bus"/>
+
+<flow id="sauces-julio1" begin="0" end= "5400" period="420" route="route2" type="bus"/>
+
+<flow id="colinas-lojanas" begin="0" end= "5400" period="420" route="route1" type="bus"/>
+
+<flow id="motupe-punzara" begin="0" end= "5400" period="420" route="route3" type="bus"/>
+
+
+
+
+------------------------------------RUTAS AUTOS-----------------------------------
+
+							   -----Entrada Iglesia-Zona-------- 
+<route id="route6" edges=" guaya1 guaya2 guaya3 guaya4 guaya10"/>
+<route id="route7" edges=" guaya1 cuenca3"/>
+<route id="route8" edges=" guaya1 guaya2 orillas2"/>
+<route id="route9" edges=" guaya1 guaya2 orillas3 orillas4 orillas7"/>
+<route id="route10" edges=" guaya1 guaya2 guaya3 nueval2"/>
+<route id="route888" edges=" guaya1 guaya2 orillas3 puna2"/>
+
+
+
+
+<flow id="auto1" begin="0" end= "5400" period="90" route="route6" type="carro" />
+<flow id="auto2" begin="0" end= "5400" period="90" route="route6" type="moto" />
+<flow id="auto3" begin="0" end= "5400" period="90" route="route6" type="carro2" />
+
+
+<flow id="auto4" begin="0" end= "5400" period="120" route="route7" type="carro1" />
+
+
+<flow id="auto5" begin="0" end= "5400" period="90" route="route8" type="camion"  />
+<flow id="auto6" begin="0" end= "5400" period="90" route="route8" type="carro2"  />
+<flow id="auto7" begin="0" end= "5400" period="90" route="route8" type="taxi"  />
+
+
+<flow id="auto8" begin="0" end= "5400" period="900" route="route9" type="carro1" />
+<flow id="auto9" begin="0" end= "5400" period="90" route="route8" type="carro2" />
+<flow id="auto10" begin="0" end= "5400" period="90" route="route6" type="carro3" />
+
+
+
+<flow id="auto11" begin="0" end= "5400" period="90" route="route10" type="taxi" />
+<flow id="auto12" begin="0" end= "5400" period="90" route="route6" type="carro1" />
+<flow id="auto13" begin="0" end= "5400" period="90" route="route10" type="taxi" />
+<flow id="auto14" begin="0" end= "5400" period="90" route="route6" type="carro3" />
+
+<flow id="auto888" begin="0" end= "5400" period="90" route="route888" type="carro3" />
+
+
+
+							
+
+
+
+
+
+
+
+							   -----Entrada Zona-Iglesia-------- 
+
+<route id="route11" edges=" guaya9 guaya5 guaya6 guaya7 guaya8"/>
+<route id="route12" edges=" guaya9 guaya5 nueval2"/>
+<route id="route13" edges=" guaya9 guaya5 guaya6 orillas3 orillas4 orillas7"/>
+<route id="route14" edges=" guaya9 guaya5 guaya6 orillas2"/>
+<route id="route15" edges=" guaya9 guaya5 guaya6 guaya7 cuenca3"/>
+<route id="route999" edges=" santo1 guaya10"/>
+<route id="route998" edges=" santo1 guaya5 nueval2"/>
+<route id="route997" edges=" santo1 santo2"/>
+<route id="route996" edges=" guaya9 guaya5 guaya6 orillas3 puna2"/>
+
+
+
+
+
+<flow id="auto20" begin="0" end= "5400" period="90" route="route11" type="carro" />
+<flow id="auto21" begin="0" end= "5400" period="90" route="route11" type="carro1" />
+<flow id="auto22" begin="0" end= "5400" period="90" route="route11" type="moto" />
+<flow id="auto23" begin="0" end= "5400" period="90" route="route11" type="carro3" />
+
+<flow id="auto24" begin="0" end= "5400" period="90" route="route12" type="camion" />
+<flow id="auto25" begin="0" end= "5400" period="90" route="route12" type="carro" />
+<flow id="auto26" begin="0" end= "5400" period="90" route="route12" type="carro1" />
+<flow id="auto27" begin="0" end= "5400" period="90" route="route12" type="carro3" />
+
+<flow id="auto28" begin="0" end= "5400" period="900" route="route13" type="carro2" />
+
+<flow id="auto29" begin="0" end= "5400" period="90" route="route14" type="carro2" />
+<flow id="auto30" begin="0" end= "5400" period="90" route="route14" type="carro2" />
+<flow id="auto31" begin="0" end= "5400" period="90" route="route14" type="carro2" />
+
+<flow id="auto32" begin="0" end= "5400" period="900" route="route15" type="carro2" />
+
+<flow id="auto999" begin="0" end= "5400" period="900" route="route999" type="carro1" />
+
+<flow id="auto998" begin="0" end= "5400" period="900" route="route998" type="carro2" />
+
+<flow id="auto997" begin="0" end= "5400" period="900" route="route997" type="carro3" />
+
+<flow id="auto996" begin="0" end= "5400" period="900" route="route996" type="carro1" />
+
+
+
+
+
+
+							   -----Entrada Nueva Loja-------- 
+								
+<route id="route16" edges=" nueval1 guaya6 guaya7 guaya8"/>
+<route id="route17" edges=" nueval1 guaya4 guaya10"/>
+<route id="route18" edges=" nueval1 nueval2"/>
+<route id="route19" edges=" nueval1 guaya6 orillas2"/>
+<route id="route20" edges=" nueval1 guaya6 orillas3 orillas4 orillas7"/>
+<route id="route21" edges=" nueval1 guaya6 guaya7 cuenca3"/>
+
+
+<flow id="auto33" begin="0" end= "5400" period="90" route="route16" type="carro" />
+<flow id="auto34" begin="0" end= "5400" period="90" route="route16" type="carro1" />
+<flow id="auto35" begin="0" end= "5400" period="90" route="route16" type="taxi" />
+
+<flow id="auto36" begin="0" end= "5400" period="90" route="route17" type="carro" />
+<flow id="auto37" begin="0" end= "5400" period="90" route="route17" type="moto" />
+
+<flow id="auto38" begin="0" end= "5400" period="90" route="route18" type="carro2" />
+<flow id="auto39" begin="0" end= "5400" period="90" route="route18" type="carro3" />
+<flow id="auto40" begin="0" end= "5400" period="90" route="route18" type="camion" />
+<flow id="auto41" begin="0" end= "5400" period="90" route="route18" type="carro1" />
+
+
+<flow id="auto42" begin="0" end= "5400" period="90" route="route19" type="carro" />
+<flow id="auto43" begin="0" end= "5400" period="90" route="route19" type="carro2" />
+
+<flow id="auto44" begin="0" end= "5400" period="900" route="route20" type="carro" />
+
+<flow id="auto45" begin="0" end= "5400" period="900" route="route21" type="carro3" />
+
+
+
+
+
+
+
+
+
+							   -----Entrada Orillas Zamora-------- 
+							   
+<route id="route22" edges="orillas6 orillas5 orillas1 orillas2"/>
+<route id="route23" edges="orillas6 orillas5 orillas1 guaya7 guaya8"/>
+<route id="route24" edges="orillas6 orillas5 orillas1 guaya7 cuenca3"/>
+<route id="route25" edges="orillas6 orillas5 orillas1 guaya3 nueval2"/>
+<route id="route26" edges="orillas6 orillas5 orillas1 guaya3 guaya4 guaya10"/>
+
+
+
+<flow id="auto46" begin="0" end= "5400" period="90" route="route22" type="carro1" />
+<flow id="auto47" begin="0" end= "5400" period="90" route="route22" type="carro2" />
+
+<flow id="auto48" begin="0" end= "5400" period="90" route="route23" type="camion" />
+<flow id="auto49" begin="0" end= "5400" period="90" route="route23" type="taxi" />
+
+<flow id="auto50" begin="0" end= "5400" period="900" route="route24" type="moto" />
+
+<flow id="auto51" begin="0" end= "5400" period="90" route="route25" type="carro3" />
+
+<flow id="auto52" begin="0" end= "5400" period="90" route="route26" type="taxi" />
+
+
+
+
+
+							   
+<route id="route27" edges="orillas8 orillas5 orillas1 orillas2"/>
+<route id="route28" edges="orillas8 orillas5 orillas1 guaya7 guaya8"/>
+<route id="route29" edges="orillas8 orillas5 orillas1 guaya7 cuenca3"/>
+<route id="route30" edges="orillas8 orillas5 orillas1 guaya3 nueval2"/>
+<route id="route31" edges="orillas8 orillas5 orillas1 guaya3 guaya4 guaya10"/>
+
+
+<flow id="auto53" begin="0" end= "5400" period="90" route="route27" type="carro" />
+<flow id="auto54" begin="0" end= "5400" period="90" route="route27" type="carro1" />
+<flow id="auto55" begin="0" end= "5400" period="90" route="route27" type="carro2" />
+<flow id="auto56" begin="0" end= "5400" period="90" route="route27" type="taxi" />
+
+<flow id="auto57" begin="0" end= "5400" period="90" route="route28" type="carro3" />
+<flow id="auto58" begin="0" end= "5400" period="90" route="route28" type="taxi" />
+<flow id="auto59" begin="0" end= "5400" period="90" route="route28" type="carro2" />
+
+<flow id="auto60" begin="0" end= "5400" period="900" route="route29" type="carro3" />
+
+<flow id="auto61" begin="0" end= "5400" period="90" route="route30" type="carro" />
+<flow id="auto62" begin="0" end= "5400" period="90" route="route30" type="moto" />
+
+<flow id="auto63" begin="0" end= "5400" period="90" route="route31" type="carro2" />
+<flow id="auto64" begin="0" end= "5400" period="90" route="route31" type="carro3" />
+<flow id="auto65" begin="0" end= "5400" period="90" route="route31" type="taxi" />
+
+
+
+						----------- RUTAS BICICLETAS-------------------------
+						
+<route id="route37" edges=" bici1 bici2 bici3 bici4"/>
+<route id="route38" edges=" bici5 bici6 bici7 bici8"/>
+
+<flow id="auto66" begin="0" end= "5400" period="900" route="route37" type="bici" />
+<flow id="auto67" begin="0" end= "5400" period="900" route="route38" type="bici" />
+
+
+
+
+
+							-----Entrada Cuenca-Zona-------- 
+
+<route id="route32" edges=" cuenca1 cuenca2 guaya2 guaya3 guaya4"/>
+<route id="route33" edges=" cuenca1 cuenca2 cuenca3"/>
+<route id="route34" edges=" cuenca1 cuenca2 guaya2 orillas2"/>
+<route id="route35" edges=" cuenca1 cuenca2 guaya2 orillas3 orillas4 orillas7"/>
+<route id="route36" edges=" cuenca1 cuenca2 guaya2 guaya3 nueval2"/>
+
+
+<flow id="auto15" begin="0" end= "5400" period="100" route="route32" type="carro1" />
+
+<flow id="auto16" begin="50" end= "5400" period="200" route="route33" type="taxi" />
+
+<flow id="auto17" begin="100" end= "5400" period="300" route="route34" type="carro3" />
+
+<flow id="auto18" begin="150" end= "5400" period="1200" route="route35" type="taxi" />
+
+<flow id="auto19" begin="200" end= "5400" period="500" route="route36" type="carro2" />
+
+
+
+
+
+
+
+							  
+
+
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</routes>
+
