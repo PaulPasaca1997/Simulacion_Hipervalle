@@ -25,23 +25,23 @@
 <route id="route5" edges=" guaya1 guaya2 guaya3 nueval2"/>
 
 
-<flow id="pitas-rosal" begin="0" end= "5400" period="420" route="route1" type="bus"  />
+<flow id="pitas-rosal" begin="0" end= "5400" period="480" route="route1" type="bus"  />
 
-<flow id="pitas-rosal1" begin="0" end= "5400" period="420" route="route2" type="bus"/>
+<flow id="pitas-rosal1" begin="0" end= "5400" period="480" route="route2" type="bus"/>
 
-<flow id="borja-isidro" begin="0" end= "5400" period="420" route="route3" type="bus"/>
+<flow id="borja-isidro" begin="0" end= "5400" period="360" route="route3" type="bus"/>
 
 <flow id="paraiso-sol" begin="0" end= "5400" period="420" route="route5" type="bus"/>
 
-<flow id="sauces-julio" begin="0" end= "5400" period="420" route="route4" type="bus"/>
+<flow id="sauces-julio" begin="0" end= "5400" period="300" route="route4" type="bus"/>
 
-<flow id="colinas-lojanas1" begin="0" end= "5400" period="420" route="route2" type="bus"/>
+<flow id="colinas-lojanas1" begin="0" end= "5400" period="300" route="route2" type="bus"/>
 
-<flow id="sauces-julio1" begin="0" end= "5400" period="420" route="route2" type="bus"/>
+<flow id="sauces-julio1" begin="0" end= "5400" period="300" route="route2" type="bus"/>
 
-<flow id="colinas-lojanas" begin="0" end= "5400" period="420" route="route1" type="bus"/>
+<flow id="colinas-lojanas" begin="0" end= "5400" period="300" route="route1" type="bus"/>
 
-<flow id="motupe-punzara" begin="0" end= "5400" period="420" route="route3" type="bus"/>
+<flow id="motupe-punzara" begin="0" end= "5400" period="600" route="route3" type="bus"/>
 
 
 
@@ -191,16 +191,12 @@
 
 
 <flow id="auto46" begin="0" end= "5400" period="90" route="route22" type="carro1" />
-<flow id="auto47" begin="0" end= "5400" period="90" route="route22" type="carro2" />
-
-<flow id="auto48" begin="0" end= "5400" period="90" route="route23" type="camion" />
-<flow id="auto49" begin="0" end= "5400" period="90" route="route23" type="taxi" />
 
 <flow id="auto50" begin="0" end= "5400" period="900" route="route24" type="moto" />
 
-<flow id="auto51" begin="0" end= "5400" period="90" route="route25" type="carro3" />
+<flow id="auto51" begin="0" end= "5400" period="110" route="route25" type="carro3" />
 
-<flow id="auto52" begin="0" end= "5400" period="90" route="route26" type="taxi" />
+<flow id="auto52" begin="0" end= "5400" period="120" route="route26" type="taxi" />
 
 
 
